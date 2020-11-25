@@ -1,16 +1,7 @@
 Distance Test
 ===
 
-
-1. Code structure
-1. SQL Querying
-1. Computer vision tasks
-
-1. Given a random image (from a URL, like [this](https://4.bp.blogspot.com/-oyrLdls7rWE/UtVv0Bvt09I/AAAAAAAAAHQ/7BOrneNBaMs/s1600/Bathroom+Designs+2014+1.jpg)), suggest a set of similar materials from the data provided.
-
-### Data
-
-The [starting dataset](link) is a collection of images coming out of a generalist search engine. We have collated some metadata in the [accompanying csv](./assets/2011_material_info.csv), which has the following columns:
+The [starting dataset](https://drive.google.com/file/d/1IIK5xr4VpbhZPkZLVAV5m1SCRRtaLWul/view?usp=sharing) is a collection of images coming out of a generalist search engine. We have collated some metadata in the [accompanying csv](./assets/2011_material_info.csv), which has the following columns:
 
 | Column | Description |
 | ------ | ----------- |
@@ -45,18 +36,19 @@ wood tile              593
 
 Beware that the provided dataset is not real data, but images taken from search engines - inconsistencies are to be expected.  
 
-You would need to design a distance model that takes a random image and returns the closest 5 recommendations.
+You would need to design a distance model that takes a random image and returns the closest 5 items in the dataset.
 
 ### Output
 The output should be a runnable python code that we can call from the command line, like:
 ```bash
 $ python recommend.py --url "https://randomsite.com/myimg.jpg"
 ```
-The program should download the image and infer a complementing set of materials. Then it should store a JPG file in the `./output` folder with the following naming convention:
+The program should download the image and infer a complementing set of materials. Inference should be done on CPU. Then it should store a JPG file in the `./output` folder with the following naming convention:
 ```python
 f'{surname}_{name}__{time.now()}.jpg'
 ```
 where your name and surname should be inserted.  
+
 This image should have:
 *   The original input image
 *   Up to 8 of the closest products identified by your model
@@ -64,7 +56,7 @@ This image should have:
 
 ![dsitances](./assets/distance01.jpg)
 
-Distance algorithms tend to be biased on colour. Can you propose a way to alleviate this, so the model can return similar images attending to other structural properties of the image like
+Distance algorithms tend to be biased on color. Can you propose a way to alleviate this, so the model can return similar images attending to other structural properties of the image like
 *   Geometry (is it a brick, or a set of tiles, or a swatch?)
 *   Color homogeneity, variance, contrast, saturation...
 *   Texture (veins, dots, lines, grain...)
@@ -80,4 +72,7 @@ Extra points will be granted for the following:
 *   Knowledge and application of Image augmentation techniques
 
 ***
-You would need to add any jupyter notebooks you might have used to design and train your models. Well documented code is a plus. If you used an environment manager like conda or poetry, please add details on how to activate it.
+
+You would need to add any jupyter notebooks / python code you might have used to design and train your models. Well documented code is a plus. If you used an environment manager like conda or poetry, please add details on how to activate it so your inference program works nicely. 
+
+Looking forward to seeing your approach!

@@ -47,7 +47,7 @@ On your implementation, please provide a detailed description of your line of th
     *   How would you get more labelled data, and what would that mean in terms of time and money?
 *   Implementation
     *   Any general notes on your design decisions
-    *   Challenges you encountered and did you overcome them
+    *   Challenges you encountered and how did you overcome them
 *   Training
     *   We encourage you to use transfer learning to have a running prototype, and work in refining the pretrained network on the categories of interest
     *   We don't expect you to train on expensive instances, but get the most out of your machine or free-tier cloud hardware.
@@ -56,7 +56,7 @@ On your implementation, please provide a detailed description of your line of th
 
 ***
 
-You would need to add any jupyter notebooks you might have used to design and train your models. Well documented code is a plus. If you used an environment manager like conda or poetry, please add details on how to activate it so your inference program works nicely. 
+You would need to add any jupyter notebooks / python code you might have used to design and train your models. Well documented code is a plus. If you used an environment manager like conda or poetry, please add details on how to activate it so your inference program works nicely. 
 
 Looking forward to seeing your approach!
 
