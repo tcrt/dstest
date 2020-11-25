@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "ds-playground"
+version = "0.1.0"
+description = "Computer vision & code test"
+authors = ["Thecorate"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pandas = "^1.1.4"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
