@@ -39,11 +39,11 @@ Beware that the provided dataset is not real data, but images taken from search 
 You would need to design a distance model that takes a random image and returns the closest 5 items in the dataset.
 
 ### Output
-The output should be a runnable python code that we can call from the command line, like:
+The output should be a juptyer/colab notebook so we can follow your process. You might as well create a runnable python code that we can call from the command line, like:
 ```bash
 $ python recommend.py --url "https://randomsite.com/myimg.jpg"
 ```
-The program should download the image and infer a complementing set of materials. Inference should be done on CPU. Then it should store a JPG file in the `./output` folder with the following naming convention:
+This output is optional, and the notebook should suffice. If you decide to implement it, the program should download the image and infer a complementing set of materials. Inference should be done on CPU. Then it should store a JPG file in the `./output` folder with the following naming convention:
 ```python
 f'{surname}_{name}__{time.now()}.jpg'
 ```
