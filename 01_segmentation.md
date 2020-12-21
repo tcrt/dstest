@@ -26,7 +26,7 @@ You should provide a roadmap of your implementation, providing a detailed descri
     *   How would you refine the pretrained network on the categories of interest
     *   Any error metrics used to validate and fine-tune the model
 
-If you feel brave, you can give the implementation a go. In that case, you should create a runnable python program that can be called from the command line like this:
+If you feel brave, you can give the implementation a go. In that case, you should create a jupyter notebook / colab so we can follow your process. You could also create a runnable python program that can be called from the command line like this (optional):
 ```bash
 $ python segment.py --url "https://randomsite.com/myimg.jpg"
 ```
